@@ -13,11 +13,15 @@ jobs:
           run: echo "My First github actions job"
 
         - name: List and read file
-          run:
+          run: |
             echo "my first github action job"
             ls -ltra
             cat cat README.md
-        - name: Generate ASSCII
+
+        - name: Generate ASSCII cowsay
+          run: sudo apt-get install cowsay -y
+
+        - name: using lib cowsay
           run: cowsay -f dragon "Run for cover , i am Dragon" >> dragon.txt 
         # - name: List file
         #   run: ls
