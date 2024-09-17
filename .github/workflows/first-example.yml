@@ -23,8 +23,9 @@ jobs:
 
         - name: using lib cowsay
           run: cowsay -f dragon "Run for cover , i am Dragon" >> dragon.txt 
-        # - name: List file
-        #   run: ls
+        
+        - name: read file
+          run: cat dragon.txt 
 
         # - name: Read File
         #   run: cat README.md
