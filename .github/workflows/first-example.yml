@@ -16,7 +16,7 @@ jobs:
           run: |
             echo "my first github action job"
             ls -ltra
-            cat cat README.md
+            cat README.md
 
         - name: Generate ASSCII cowsay
           run: sudo apt-get install cowsay -y
